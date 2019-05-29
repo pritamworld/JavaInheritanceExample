@@ -75,4 +75,6 @@ public abstract class Person implements IDisplay
     {
         return String.format("%s %s", this.firstName, this.lastName);
     }
+
+    //public abstract void makeAbstract();
 }

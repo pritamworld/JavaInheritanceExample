@@ -20,4 +20,9 @@ public class Laptop extends Computer
     public void setWeight(float weight) {
         this.weight = weight;
     }
+
+    @Override
+    public void display() {
+
+    }
 }

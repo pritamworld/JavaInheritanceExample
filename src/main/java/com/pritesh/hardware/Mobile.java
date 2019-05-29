@@ -30,4 +30,9 @@ public class Mobile extends Computer
     public void setProviderName(String providerName) {
         this.providerName = providerName;
     }
+
+    @Override
+    public void display() {
+
+    }
 }

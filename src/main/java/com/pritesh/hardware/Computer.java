@@ -1,6 +1,8 @@
 package com.pritesh.hardware;
 
-public class Computer
+import com.pritesh.other.IDisplay;
+
+public abstract class Computer implements IDisplay
 {
     private int id;
     private String manufacturerName;

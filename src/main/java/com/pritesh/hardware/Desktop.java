@@ -20,4 +20,9 @@ public class Desktop extends  Computer
     public void setScreenType(String screenType) {
         this.screenType = screenType;
     }
+
+    @Override
+    public void display() {
+
+    }
 }
