@@ -1,10 +1,11 @@
 package com.pritesh.college;
 
 import com.pritesh.hardware.Computer;
+import com.pritesh.other.IDisplay;
 
 import java.util.Date;
 
-public class Person
+public abstract class Person implements IDisplay
 {
     private int id;
     private String firstName;

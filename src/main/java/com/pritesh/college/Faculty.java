@@ -41,4 +41,15 @@ public class Faculty extends Person
     public void setSalary(float salary) {
         this.salary = salary;
     }
+
+    @Override
+    public void display() {
+
+    }
+
+    @Override
+    public void print()
+    {
+
+    }
 }

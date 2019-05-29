@@ -1,7 +1,9 @@
 package com.pritesh;
 
 import com.pritesh.college.Faculty;
+import com.pritesh.college.Person;
 import com.pritesh.college.Student;
+import com.pritesh.other.IDisplay;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -25,6 +27,9 @@ public class Day5InheritanceExample
 
 
         Faculty f1 = new Faculty();
+
+        //IDisplay i = new IDisplay() ;
+        //Person p = new Person();
 
 
     }
