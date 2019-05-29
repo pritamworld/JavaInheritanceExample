@@ -7,13 +7,36 @@ import java.util.Date;
 
 public abstract class Person implements IDisplay
 {
-    private int id;
-    private String firstName;
+    protected int id;
+    public String firstName;
     private String lastName;
     private String gender;
     private String emailId;
     private Date birthDate;
     private Computer computer;
+
+    public Person() {
+    }
+
+    /**
+     *
+     * @param id
+     * @param firstName
+     * @param lastName
+     * @param gender
+     * @param emailId
+     * @param birthDate
+     * @param computer
+     */
+    public Person(int id, String firstName, String lastName, String gender, String emailId, Date birthDate, Computer computer) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.gender = gender;
+        this.emailId = emailId;
+        this.birthDate = birthDate;
+        this.computer = computer;
+    }
 
     public int getId() {
         return id;
@@ -74,6 +97,11 @@ public abstract class Person implements IDisplay
     public String getFullName()
     {
         return String.format("%s %s", this.firstName, this.lastName);
+    }
+
+    public static void test()
+    {
+
     }
 
     //public abstract void makeAbstract();

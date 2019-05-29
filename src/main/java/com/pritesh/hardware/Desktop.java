@@ -5,6 +5,36 @@ public class Desktop extends  Computer
     private String keyBoardCompanyName;
     private String screenType;
 
+    public Desktop() {
+        System.out.println("Desktop Constructor");
+    }
+
+    /**
+     *
+     * @param keyBoardCompanyName
+     * @param screenType
+     */
+    public Desktop(String keyBoardCompanyName, String screenType) {
+        super();
+        this.keyBoardCompanyName = keyBoardCompanyName;
+        this.screenType = screenType;
+
+        System.out.println("Desktop D2");
+    }
+
+    /**
+     *
+     * @param id
+     * @param manufacturerName
+     * @param keyBoardCompanyName
+     * @param screenType
+     */
+    public Desktop(int id, String manufacturerName, String keyBoardCompanyName, String screenType) {
+        super(id, manufacturerName);
+        this.keyBoardCompanyName = keyBoardCompanyName;
+        this.screenType = screenType;
+    }
+
     public String getKeyBoardCompanyName() {
         return keyBoardCompanyName;
     }

@@ -1,12 +1,61 @@
 package com.pritesh.college;
 
+import com.pritesh.hardware.Computer;
+
+import java.util.Date;
+
 public class Student extends Person
 {
+    static public int count;
+    public final int X = 10;
     private String courseName;
     private float marks[];
     private float totalMarks;
     private float percentage;
     private String result;
+
+    public Student() {
+    }
+
+    /**
+     *
+     * @param courseName
+     * @param marks
+     * @param totalMarks
+     * @param percentage
+     * @param result
+     */
+    public Student(String courseName, float[] marks, float totalMarks, float percentage, String result) {
+        this.courseName = courseName;
+        this.marks = marks;
+        this.totalMarks = totalMarks;
+        this.percentage = percentage;
+        this.result = result;
+    }
+
+    /**
+     *
+     * @param id
+     * @param firstName
+     * @param lastName
+     * @param gender
+     * @param emailId
+     * @param birthDate
+     * @param computer
+     * @param courseName
+     * @param marks
+     * @param totalMarks
+     * @param percentage
+     * @param result
+     */
+    public Student(int id, String firstName, String lastName, String gender, String emailId, Date birthDate, Computer computer, String courseName, float[] marks, float totalMarks, float percentage, String result) {
+        super(id, firstName, lastName, gender, emailId, birthDate, computer);
+        this.courseName = courseName;
+        this.marks = marks;
+        this.totalMarks = totalMarks;
+        this.percentage = percentage;
+        this.result = result;
+    }
 
     public String getCourseName() {
         return courseName;

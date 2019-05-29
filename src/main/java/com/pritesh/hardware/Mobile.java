@@ -6,6 +6,36 @@ public class Mobile extends Computer
     private boolean canMakeCall;
     private String providerName;//Rogers, Bell, Telus
 
+    public Mobile() {
+    }
+
+    /**
+     *
+     * @param operatingSystemName
+     * @param canMakeCall
+     * @param providerName
+     */
+    public Mobile(String operatingSystemName, boolean canMakeCall, String providerName) {
+        this.operatingSystemName = operatingSystemName;
+        this.canMakeCall = canMakeCall;
+        this.providerName = providerName;
+    }
+
+    /**
+     *
+     * @param id
+     * @param manufacturerName
+     * @param operatingSystemName
+     * @param canMakeCall
+     * @param providerName
+     */
+    public Mobile(int id, String manufacturerName, String operatingSystemName, boolean canMakeCall, String providerName) {
+        super(id, manufacturerName);
+        this.operatingSystemName = operatingSystemName;
+        this.canMakeCall = canMakeCall;
+        this.providerName = providerName;
+    }
+    
 
     public String getOperatingSystemName() {
         return operatingSystemName;

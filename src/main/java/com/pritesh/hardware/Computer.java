@@ -7,6 +7,23 @@ public abstract class Computer implements IDisplay
     private int id;
     private String manufacturerName;
 
+    public Computer() {
+        //BLANK CONSTRUCTOR
+
+        System.out.println("Computer Constructor");
+    }
+
+    /**
+     *
+     * @param id
+     * @param manufacturerName
+     */
+    public Computer(int id, String manufacturerName) {
+        this.id = id;
+        this.manufacturerName = manufacturerName;
+        System.out.println("Computer Parameter");
+    } //Parameterised Constructor
+
     public int getId() {
         return id;
     }
