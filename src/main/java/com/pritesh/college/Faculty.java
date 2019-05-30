@@ -4,8 +4,7 @@ import com.pritesh.hardware.Computer;
 
 import java.util.Date;
 
-public class Faculty extends Person
-{
+public class Faculty extends Person {
     private String departmentName;
     private String designation;
     private Date joiningDate;
@@ -15,7 +14,6 @@ public class Faculty extends Person
     }
 
     /**
-     *
      * @param departmentName
      * @param designation
      * @param joiningDate
@@ -29,7 +27,6 @@ public class Faculty extends Person
     }
 
     /**
-     *
      * @param id
      * @param firstName
      * @param lastName
@@ -88,8 +85,7 @@ public class Faculty extends Person
     }
 
     @Override
-    public void print()
-    {
+    public void print() {
 
     }
 }

@@ -2,8 +2,7 @@ package com.pritesh.hardware;
 
 import com.pritesh.other.IDisplay;
 
-public abstract class Computer implements IDisplay
-{
+public abstract class Computer implements IDisplay {
     private int id;
     private String manufacturerName;
 
@@ -14,7 +13,6 @@ public abstract class Computer implements IDisplay
     }
 
     /**
-     *
      * @param id
      * @param manufacturerName
      */

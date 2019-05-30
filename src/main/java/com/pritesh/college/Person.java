@@ -5,10 +5,9 @@ import com.pritesh.other.IDisplay;
 
 import java.util.Date;
 
-public abstract class Person implements IDisplay
-{
-    protected int id;
+public abstract class Person implements IDisplay {
     public String firstName;
+    protected int id;
     private String lastName;
     private String gender;
     private String emailId;
@@ -19,7 +18,6 @@ public abstract class Person implements IDisplay
     }
 
     /**
-     *
      * @param id
      * @param firstName
      * @param lastName
@@ -36,6 +34,10 @@ public abstract class Person implements IDisplay
         this.emailId = emailId;
         this.birthDate = birthDate;
         this.computer = computer;
+    }
+
+    public static void test() {
+
     }
 
     public int getId() {
@@ -94,14 +96,8 @@ public abstract class Person implements IDisplay
         this.computer = computer;
     }
 
-    public String getFullName()
-    {
+    public String getFullName() {
         return String.format("%s %s", this.firstName, this.lastName);
-    }
-
-    public static void test()
-    {
-
     }
 
     //public abstract void makeAbstract();

@@ -1,8 +1,8 @@
 package com.pritesh.other;
 
-public interface IDisplay
-{
-    final int  no = 100;
+public interface IDisplay {
+    final int no = 100;
+
     public void display();
 
     /*
@@ -15,8 +15,7 @@ public interface IDisplay
         in a situation where a concrete class fails to provide an implementation
         for that method.
      */
-    default public void print()
-    {
+    default public void print() {
 
     }
 

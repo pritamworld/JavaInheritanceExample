@@ -1,37 +1,17 @@
 package com.pritesh;
 
 import com.pritesh.college.Faculty;
-import com.pritesh.college.Person;
 import com.pritesh.college.Student;
 import com.pritesh.hardware.Desktop;
-import com.pritesh.other.IDisplay;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class Day5InheritanceExample
-{
+public class Day5InheritanceExample {
 
-    int y;
     static int p;
     static int q;
-
-    {
-
-        y =100;
-
-        int a = 200;
-
-        //static int l = 300;
-
-        System.out.println("Hello Block - 1");
-    }
-
-    {
-        System.out.println("Hello Block - 2");
-    }
-
 
     static {
         p = 1000;
@@ -44,18 +24,33 @@ public class Day5InheritanceExample
 
     }
 
-    public static void main(String[] args)
+    int y;
+
     {
+
+        y = 100;
+
+        int a = 200;
+
+        //static int l = 300;
+
+        System.out.println("Hello Block - 1");
+    }
+
+    {
+        System.out.println("Hello Block - 2");
+    }
+
+    public static void main(String[] args) {
         Student s1 = new Student();
-        Desktop d1=new Desktop();
-        Desktop d2=new Desktop("Keyboard","Screen");
+        Desktop d1 = new Desktop();
+        Desktop d2 = new Desktop("Keyboard", "Screen");
 
         Student.count++;
 
         s1.count++;
 
         Day5InheritanceExample d = new Day5InheritanceExample();
-
 
 
         //Reference : https://www.mkyong.com/java/java-date-and-calendar-examples/

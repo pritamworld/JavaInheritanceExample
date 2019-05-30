@@ -1,7 +1,6 @@
 package com.pritesh.hardware;
 
-public class Mobile extends Computer
-{
+public class Mobile extends Computer {
     private String operatingSystemName;
     private boolean canMakeCall;
     private String providerName;//Rogers, Bell, Telus
@@ -10,7 +9,6 @@ public class Mobile extends Computer
     }
 
     /**
-     *
      * @param operatingSystemName
      * @param canMakeCall
      * @param providerName
@@ -22,7 +20,6 @@ public class Mobile extends Computer
     }
 
     /**
-     *
      * @param id
      * @param manufacturerName
      * @param operatingSystemName
@@ -35,7 +32,7 @@ public class Mobile extends Computer
         this.canMakeCall = canMakeCall;
         this.providerName = providerName;
     }
-    
+
 
     public String getOperatingSystemName() {
         return operatingSystemName;

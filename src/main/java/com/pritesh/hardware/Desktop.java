@@ -1,7 +1,6 @@
 package com.pritesh.hardware;
 
-public class Desktop extends  Computer
-{
+public class Desktop extends Computer {
     private String keyBoardCompanyName;
     private String screenType;
 
@@ -10,7 +9,6 @@ public class Desktop extends  Computer
     }
 
     /**
-     *
      * @param keyBoardCompanyName
      * @param screenType
      */
@@ -23,7 +21,6 @@ public class Desktop extends  Computer
     }
 
     /**
-     *
      * @param id
      * @param manufacturerName
      * @param keyBoardCompanyName

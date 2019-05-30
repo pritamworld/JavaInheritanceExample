@@ -1,7 +1,6 @@
 package com.pritesh.hardware;
 
-public class Laptop extends Computer
-{
+public class Laptop extends Computer {
     private String screenSize;
     private float weight;
 
@@ -9,7 +8,6 @@ public class Laptop extends Computer
     }
 
     /**
-     *
      * @param screenSize
      * @param weight
      */
@@ -19,7 +17,6 @@ public class Laptop extends Computer
     }
 
     /**
-     *
      * @param id
      * @param manufacturerName
      * @param screenSize

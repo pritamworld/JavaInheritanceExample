@@ -4,8 +4,7 @@ import com.pritesh.hardware.Computer;
 
 import java.util.Date;
 
-public class Student extends Person
-{
+public class Student extends Person {
     static public int count;
     public final int X = 10;
     private String courseName;
@@ -18,7 +17,6 @@ public class Student extends Person
     }
 
     /**
-     *
      * @param courseName
      * @param marks
      * @param totalMarks
@@ -34,7 +32,6 @@ public class Student extends Person
     }
 
     /**
-     *
      * @param id
      * @param firstName
      * @param lastName
@@ -85,18 +82,15 @@ public class Student extends Person
         return result;
     }
 
-    public void calculateTotal()
-    {
+    public void calculateTotal() {
         this.totalMarks = 0.0f;
 
-        for(int i=0; i<this.marks.length; i++)
-        {
-            this.totalMarks =this.totalMarks + marks[i];
+        for (int i = 0; i < this.marks.length; i++) {
+            this.totalMarks = this.totalMarks + marks[i];
         }
     }
 
-    public void calculatePercentage()
-    {
+    public void calculatePercentage() {
         this.percentage = this.totalMarks / this.marks.length;
     }
 
@@ -104,16 +98,13 @@ public class Student extends Person
     public void calculateResult() {
         int passedSubj = 0;
 
-        for (int i = 0; i < marks.length; i++)
-        {
-            if (marks[i] >= 50.0f)
-            {
+        for (int i = 0; i < marks.length; i++) {
+            if (marks[i] >= 50.0f) {
                 passedSubj++;
             }
         }
 
-        if (passedSubj <= 2)
-        {
+        if (passedSubj <= 2) {
             this.result = "Fail";
         } else {
             if (this.percentage >= 94) {
