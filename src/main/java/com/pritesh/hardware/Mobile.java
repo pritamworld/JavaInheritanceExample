@@ -60,6 +60,10 @@ public class Mobile extends Computer {
 
     @Override
     public void display() {
-
+        System.out.println("----- Mobile Information -----");
+        System.out.println("Device ID : " + this.getId());
+        System.out.println("Manufacturer Name : " + this.getManufacturerName());
+        System.out.println("Operating System Name : " + this.getOperatingSystemName());
+        System.out.println("Provider Name : " + this.getProviderName());
     }
 }

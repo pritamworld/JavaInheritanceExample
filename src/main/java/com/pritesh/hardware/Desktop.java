@@ -50,6 +50,10 @@ public class Desktop extends Computer {
 
     @Override
     public void display() {
-
+        System.out.println("----- Desktop Information -----");
+        System.out.println("Device ID : " + this.getId());
+        System.out.println("Manufacturer Name : " + this.getManufacturerName());
+        System.out.println("Keyboard Company Name : " + this.getKeyBoardCompanyName());
+        System.out.println("Screen Type : " + this.getScreenType());
     }
 }

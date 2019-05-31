@@ -81,7 +81,28 @@ public class Faculty extends Person {
 
     @Override
     public void display() {
+        System.out.println("-----------------------------------------------");
+        System.out.println("\t------------ FACULTY INFO -------------");
+        System.out.println("-----------------------------------------------");
+        System.out.println("Faculty ID : " + this.getId());
+        System.out.println("Full Name : " + this.getFullName());
+        System.out.println("Gender : " + this.getGender());
+        System.out.println("Birth Date : " + this.getBirthDate());
 
+        if(getComputer() == null)
+        {
+            System.out.println("Faculty don't have any computer");
+        }
+        else
+        {
+            getComputer().display();
+        }
+
+        System.out.println("Department Name : " + this.getDepartmentName());
+        System.out.println("Designation : " + this.getDesignation());
+        System.out.println("Joining Date : " + this.getJoiningDate());
+        System.out.println("Salary : " + this.getSalary());
+        System.out.println("-----------------------------------------------");
     }
 
     @Override

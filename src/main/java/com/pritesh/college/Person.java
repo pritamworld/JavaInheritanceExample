@@ -101,4 +101,10 @@ public abstract class Person implements IDisplay {
     }
 
     //public abstract void makeAbstract();
+
+
+    @Override
+    public void print() {
+        System.out.println("Person Print");
+    }
 }

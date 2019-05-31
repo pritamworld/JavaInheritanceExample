@@ -1,17 +1,25 @@
 package com.pritesh;
 
 import com.pritesh.college.Faculty;
+import com.pritesh.college.Person;
 import com.pritesh.college.Student;
 import com.pritesh.hardware.Desktop;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.util.*;
+
+enum StudentType
+{
+    ADULT, STUDENT
+}
 
 public class Day5InheritanceExample {
 
     static int p;
     static int q;
+
+    StudentType passType;
 
     static {
         p = 1000;
@@ -42,6 +50,8 @@ public class Day5InheritanceExample {
     }
 
     public static void main(String[] args) {
+
+        /*
         Student s1 = new Student();
         Desktop d1 = new Desktop();
         Desktop d2 = new Desktop("Keyboard", "Screen");
@@ -69,6 +79,74 @@ public class Day5InheritanceExample {
 
         //IDisplay i = new IDisplay() ;
         //Person p = new Person();
+    */
+
+        Person p;
+        Student s1 = new Student();
+        Desktop d1 = new Desktop();
+
+        p = s1;
+
+        //p.display();
+
+        //p.print();
+
+        if(p instanceof Student)
+        {
+            Student s = (Student)p;
+
+        }else if(p instanceof Faculty)
+        {
+            Faculty f = (Faculty)p;
+        }
+
+
+        //List<String>strings = new ArrayList<>();
+
+        ArrayList<String>stringArrayList = new ArrayList<>();
+        stringArrayList.add("India");
+        stringArrayList.add("China");
+        stringArrayList.add("India");
+
+        System.out.println(stringArrayList.size());
+        System.out.println(stringArrayList.contains("UK"));
+        System.out.println(stringArrayList.contains("India"));
+        System.out.println(stringArrayList.isEmpty());
+
+        stringArrayList.add(2, "Canada");
+
+        for(String s : stringArrayList) {
+           System.out.println(s);
+        }
+
+        stringArrayList.get(2);
+
+        stringArrayList.indexOf("India");
+
+        stringArrayList.lastIndexOf("India");
+
+        System.out.println("SET Example");
+
+        Set<String>stringSet = new HashSet<>();
+
+        stringSet.add("India");
+        stringSet.add("China");
+        stringSet.add("India");
+
+        for(String s: stringSet)
+        {
+            System.out.println(s);
+        }
+
+
+        /*
+        Integer x = 100;
+        Integer y = new Integer(100);
+
+        int z  = x;
+        int aa = y.intValue();
+         */
+
 
 
     }

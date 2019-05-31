@@ -46,6 +46,10 @@ public class Laptop extends Computer {
 
     @Override
     public void display() {
-
+        System.out.println("----- Laptop Information -----");
+        System.out.println("Device ID : " + this.getId());
+        System.out.println("Manufacturer Name : " + this.getManufacturerName());
+        System.out.println("Screen Size : " + this.getScreenSize());
+        System.out.println("Weight Name : " + this.getWeight());
     }
 }

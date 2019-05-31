@@ -135,6 +135,36 @@ public class Student extends Person {
 
     @Override
     public void display() {
+        System.out.println("-----------------------------------------------");
+        System.out.println("\t------------ STUDENT INFO -------------");
+        System.out.println("-----------------------------------------------");
+        System.out.println("Student ID : " + this.getId());
+        System.out.println("Full Name : " + this.getFullName());
+        System.out.println("Gender : " + this.getGender());
+        System.out.println("Birth Date : " + this.getBirthDate());
 
+        if(getComputer() == null)
+        {
+            System.out.println("Student don't have any computer");
+        }
+        else
+        {
+            getComputer().display();
+        }
+
+        System.out.println("Course Name : " + this.getCourseName());
+
+        for (int i = 0; i < this.marks.length; i++) {
+            System.out.println(String.format("Subject [%d] : %.2f", i + 1, this.marks[i]));
+        }
+        System.out.println("Total Marks : " + this.totalMarks);
+        System.out.println("Percentage : " + this.percentage);
+        System.out.println("Result : " + this.result);
+        System.out.println("-----------------------------------------------");
+    }
+
+    @Override
+    public void print() {
+        System.out.println("Student Print");
     }
 }
